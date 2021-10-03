@@ -71,11 +71,22 @@ input {
   outline-color:  #ffffff; 
   background-color:black;
 }
-
+live_trash {
+    "display" : "none"
+}
 button{
   width: 80%;
   margin: 0 auto;
-  background-color: black;
+  width:500px;
+  height:100px;
+  border: none;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+
+button:focus{
+  outline:none;
 }
 
 </style>
@@ -115,8 +126,8 @@ button{
         <input type="text" id="email" name="email" placeholder="EMAIL"><br><br><br>
         <input type="number" id="phone" name="phone" placeholder="PHONE NUMBER"><br><br><br>
         <input type="text" id="message" name="message" placeholder="MESSAGE" style="height:200px"><br><br><br>
-        <button id="submit">
-          <img src=baddifilm_files/750d93_7e61852174854efca7d5d4bb3bcb9a9fmv2.gif style="width:300px">
+        <button class="button" id="submit">
+          <img src="'baddifilm_files/submit.gif'">
         </button>
     </form>
   </div>
