@@ -23,7 +23,6 @@ body {
   background-color: black;
 }
 p {
-  
   margin: auto;
   width: 50%;
   padding: 10px;
@@ -39,6 +38,25 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+::placeholder{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+}
+input { 
+  margin: auto;
+  width: 100%;
+  padding: 15px;
+  width: 500px; 
+  height: 50px; 
+  outline-color:  #ffffff; 
+  background-color:black;
 }
 </style>
 </head>
@@ -73,10 +91,10 @@ img {
   <div class="column">
     <img src=baddifilm_files/750d93_ed1c85caaf18402aa3e8f48e41834597mv2.webp><br><br>
     <form action="https://getform.io/f/82e3e871-2b9b-484f-8bd1-d0ec6cd07e00" method="POST">
-        <input type="text" id="fname" name="name" placeholder="NAME" style="width: 300px; height: 50px; outline-color:  #ffffff; background-color:black"><br><br><br>
-        <input type="text" id="email" name="email" placeholder="EMAIL" style="width: 300px; height: 50px; outline-color:  #ffffff; background-color:black"><br><br><br>
-        <input type="number" id="phone" name="phone" placeholder="PHONE NUMBER"style="width: 300px; height: 50px; outline-color:  #ffffff; background-color:black" ><br><br><br>
-        <input type="text" id="message" name="message" placeholder="MESSAGE" style="width: 300px; height: 50px; outline-color:  #ffffff; background-color:black"><br><br><br>
+        <input type="text" id="fname" name="name" placeholder="NAME" ><br><br><br>
+        <input type="text" id="email" name="email" placeholder="EMAIL"><br><br><br>
+        <input type="number" id="phone" name="phone" placeholder="PHONE NUMBER"><br><br><br>
+        <input type="text" id="message" name="message" placeholder="MESSAGE" style="height:200px"><br><br><br>
         <button id="submit">
           <img src=baddifilm_files/750d93_7e61852174854efca7d5d4bb3bcb9a9fmv2.gif style="width:300px">
         </button>
