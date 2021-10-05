@@ -28,12 +28,14 @@
 
 .column {
   float: left;
+  margin:0px;
   width: 50%;
   padding: 10px;
 }
 
 .row:after {
   content: "";
+  margin:0px;
   display: table;
   clear: both;
 }
@@ -41,11 +43,21 @@
 img {
   margin: 0 auto;
   margin-top: 0px;
+  margin-bottom:0px;
   align: center;
   object-fit:cover;
 }
 
 .menu {
+  float: left;
+  width: 30%;
+  padding: 10px;
+  height: 300px; 
+  column-count:3;
+}
+
+menu:hover{
+  display:block;
   float: left;
   width: 30%;
   padding: 10px;
@@ -165,9 +177,12 @@ button{
 </div>
 
 <div class="row">
-  <div class="menu">
+  <div class="menu" >
     <img src="baddifilm_files/projects.webp">
+    </div>
   </div>
+
+
   <div class="menu">
     <img src="baddifilm_files/aboutus.webp">
   </div>
