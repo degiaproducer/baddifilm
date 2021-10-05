@@ -72,19 +72,11 @@ input {
   background-color:black;
 }
 
-input.submit{
-  cursor:pointer;
-}
-
 button{
   width:20px;
-  margin: 0px;
+  margin: 50px;
   border: none;
-  object-fit:scale-down;
-}
-
-button:focus{
-  outline:none;
+  object-fit:fill;
 }
 
 </style>
@@ -123,7 +115,7 @@ button:focus{
         <input type="text" id="email" name="email" placeholder="EMAIL"><br><br><br>
         <input type="number" id="phone" name="phone" placeholder="PHONE NUMBER"><br><br><br>
         <input type="text" id="message" name="message" placeholder="MESSAGE" style="height:200px">
-        <input type="submit" class="button" id="submit" style="border:none">
+        <input type="submit" class="button" id="submit" style="border:none;cursor:pointer">
           <img src="baddifilm_files/submit.gif" style="width:30%">
         </button>
     </form>
