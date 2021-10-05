@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+  background-color: black;
+}
+p {
+  margin: auto;
+  width: 50%;
+  padding: 5px;
+  color: white;
+  }
+li {
+  color: white;
+  }
+
+
+img {
+  display: block;
+  width: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  align: center;
+  object-fit:cover;
+}
+
+body{
+  text-align: center;
+}
+
+form{
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  align: center;
+}
+
+::placeholder{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
+  font-weight: 900;
+  font-size: 15px;
+  color: white;
+}
+
+input { 
+  margin: auto;
+  width: 100%;
+  padding: 10px;
+  width: 500px; 
+  height: 50px; 
+  outline-color:  #ffffff; 
+  background-color:black;
+}
+
+button{
+  background-image:url(baddifilm_files/submit\ button.png);
+  background-color:transparent;
+  background-size: 100%;
+  background-position:center;
+  width:290px;
+  height:50px;
+  align:center;
+  border:none;
+  cursor:pointer;
+  margin-top:20px;
+  object-fit:fill;
+}
+
+.button:hover{
+  background-image:url(baddifilm_files/submit.gif);
+  background-size: 100%;
+  background-position:center;
+  width:290px;
+  height:50px;
+  align:center;
+  border:none;
+  cursor:pointer;
+  margin-top:20px;
+  object-fit:fill;
+}
+
+</style>
