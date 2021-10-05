@@ -74,12 +74,28 @@ input {
 }
 
 button{
+  background-image:url(baddifilm_files/submit\ button.png);
+  background-color:transparent;
+  background-size: 100%;
+  background-position:center;
+  width:290px;
+  height:50px;
+  align:center;
+  border:none;
+  cursor:pointer;
+  margin-top:20px;
+  object-fit:fill;
+}
+
+.button:hover{
   background-image:url(baddifilm_files/submit.gif);
   background-size: 100%;
   background-position:center;
   width:290px;
   height:50px;
   align:center;
+  border:none;
+  cursor:pointer;
   margin-top:20px;
   object-fit:fill;
 }
@@ -120,7 +136,7 @@ button{
         <input type="text" id="email" name="email" placeholder="EMAIL"><br><br><br>
         <input type="number" id="phone" name="phone" placeholder="PHONE NUMBER"><br><br><br>
         <input type="text" id="message" name="message" placeholder="MESSAGE" style="height:200px"><br>
-        <button class="button" id="submit" style="border:none;cursor:pointer;">
+        <button class="button" id="submit">
         </button>
     </form>
   </div>
