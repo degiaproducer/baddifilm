@@ -96,6 +96,30 @@ video{
   width:max-content;
 }
 
+.general {
+  position: relative;
+}
+
+.overlay {
+  background-image:url(baddifilm_files/gss.png);
+  background-size: 100%;
+  position:absolute;
+  top:50%;
+  left:5%;
+  right:5%;
+  object-fit:fill;
+}
+
+.overlay:hover {
+  background-image:url(baddifilm_files/gsh.png);
+  background-size: 100%;
+  background-position:center;
+  position:absolute;
+  top:50%;
+  left:5%;
+  right:5%;
+}
+
 p {
   margin: auto;
   width: 50%;
