@@ -100,7 +100,7 @@ video{
   position: relative;
 }
 
-.overlayone {
+.generalButton {
   background-image:url(baddifilm_files/gss.png);
   background-size: 100%;
   background-repeat:no-repeat;
@@ -110,7 +110,7 @@ video{
   right:5%;
 }
 
-.overlayone:hover {
+.generalButton:hover {
   background-image:url(baddifilm_files/gsh.png);
   background-size: 100%;
   background-repeat:no-repeat;
@@ -120,36 +120,6 @@ video{
   right:5%;
 }
 
-/* The actual popup*/
-.overlayone .popupVid {
-  visibility: hidden;
-  width: 1000px;
-  background-color: black;
-  align: center;
-  position:absolute;
-  top:5%;
-  left:25%;
-  right:5%;
-}
-
-/* Popup arrow*/
-
-.overlayone .popupVid{
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
-}
-
-/*Toggle this class - hide and show the popup*/
-.overlayone .show{
-  visibility: visible;
-  -webkit-animation:normal;
-}
 
 p {
   margin: auto;
