@@ -8,15 +8,15 @@ window.document.onkeydown = function(e) {
   }
   
   function lightbox_open() {
-    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    var lightBoxVideo = document.getElementById("generalShowreel");
     window.scrollTo(0, 0);
     document.getElementById('light').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
-    lightBoxVideo.play();
+    lightBoxVideo.pause();
   }
   
   function lightbox_close() {
-    var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+    var lightBoxVideo = document.getElementById("generalShowreel");
     document.getElementById('light').style.display = 'none';
     document.getElementById('fade').style.display = 'none';
     lightBoxVideo.pause();

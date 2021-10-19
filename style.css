@@ -119,12 +119,12 @@ video{
   left:25%;
   right:5%;
 }
-
+/*here the lightbox closes*/
 #fade {
   display: none;
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: 2%;
+  left: 5%;
   width: 100%;
   height: 100%;
   background-color: black;
@@ -134,21 +134,23 @@ video{
   filter: alpha(opacity=80);
 }
 
+/* box close button position*/
+
 #light {
   display: none;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 600px;
-  max-height: 360px;
-  margin-left: -300px;
-  margin-top: -180px;
-  border: 2px solid #FFF;
-  background: #FFF;
+  top: 2%;
+  left: 5%;
+  max-width: 150px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 2px solid black;
+  background:transparent;
   z-index: 1002;
   overflow: visible;
 }
 
+/*box close button style*/
 #boxclose {
   float: right;
   cursor: pointer;
@@ -180,6 +182,7 @@ video{
   display: none;
 }
 
+/*other stylesheet starts below*/
 p {
   margin: auto;
   width: 50%;
