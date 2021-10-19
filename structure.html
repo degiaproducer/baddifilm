@@ -45,15 +45,26 @@
   <video id="comp-kcknnrdc_video" class="_3vVMz" role="presentation" crossorigin="anonymous" playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip-path: inset(5% 0 5% 0);width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/file_004.mp4" width="100%" height="50%"></video>
 
 
-<button class="generalButton" style="width:900px;height:900px;">
-<span class='popupVid'id ='myPopup'> </span>
-</button>
+<button class="generalButton" onclick="lightbox_open();" style="width:900px;height:900px;" >
 
+<div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="VisaChipCardVideo" width="600" controls>
+      <source src="baddifilm_files/file_004.mp4" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
 </div>
 
+<div id="fade" onClick="lightbox_close();"></div>
+
+</button>
+
+
+</div>
 <div class="video">
   <video id="comp-kcknnrdc_video" class="_3vVMz" role="presentation" crossorigin="anonymous" playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip: inset(15% 0 5% 0);width: 100%; height: 50%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/file_003.mp4" width="100%" height="50%"></video>
 </div>
+
 <div class="video">
   <video id="comp-kcknnrdc_video" class="_3vVMz" role="presentation" crossorigin="anonymous" playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip-path: inset(5% 0 5% 0);width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/file_005.mp4" width="100%" height="100%"></video>
 </div>
