@@ -49,14 +49,20 @@
 
 <button class="generalButton" onclick="lightbox_open();" style="width:900px;height:900px;" ></button>
 
+<div id='lightbox'>
+  <video id="generalShowreel" width="50" controls>
+    <source src="baddifilm_files/file_004.mp4" type="video/mp4">
+    <!--Browser does not support <video> tag -->
+  </video>
+</div>
+
 <div id="light">
   <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-  <video id="generalShowreel" width="50" controls>
-      <source src="baddifilm_files/file_004.mp4" type="video/mp4">
-      <!--Browser does not support <video> tag -->
-    </video>
 </div>
+
 <div id="fade" onClick="lightbox_close();"></div>
+
+
 </div>
 
 <div class="video">

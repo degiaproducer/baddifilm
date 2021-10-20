@@ -180,8 +180,14 @@ video{
   display:none;
 }
 
-.test:hover ~ .test2 {
-  display: none;
+/*light box goes here*/
+lightbox {
+  size: 100%;
+  max-width: 200px;
+  position: absolute;
+  top:5%;
+  left:25%;
+  right:5%;
 }
 
 /*other stylesheet starts below*/
