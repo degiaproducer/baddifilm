@@ -21,5 +21,3 @@ window.document.onkeydown = function(e) {
     document.getElementById('fade').style.display = 'none';
     lightBoxVideo.pause();
   }
-
-   //possible delete the scroll function
