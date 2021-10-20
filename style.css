@@ -123,11 +123,11 @@ video{
 #fade {
   display: none;
   position: fixed;
-  top: 2%;
-  left: 5%;
   width: 100%;
   height: 100%;
   background-color: black;
+  top:0%;
+  left:0%;
   z-index: 1001;
   -moz-opacity: 0.8;
   opacity: .80;
@@ -178,15 +178,7 @@ video{
   display:none;
 }
 
-/*light box goes here*/
-lightbox {
-  size: 100%;
-  max-width: 200px;
-  position: absolute;
-  top:5%;
-  left:25%;
-  right:5%;
-}
+
 
 /*other stylesheet starts below*/
 p {
