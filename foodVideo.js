@@ -3,20 +3,20 @@ window.document.onkeydown = function(e) {
       e = event;
     }
     if (e.keyCode == 27) {
-      foodLightbox_close();
+      propertyLightbox_close();
     }
   }
   
-  function foodLightbox_open() {
-    var lightBoxVideo = document.getElementById("foodShowreel");
-    document.getElementById('foodLight').style.display = 'block';
-    document.getElementById('foodFade').style.display = 'block';
+  function propertyLightbox_open() {
+    var lightBoxVideo = document.getElementById("propertyShowreel");
+    document.getElementById('propertyLight').style.display = 'block';
+    document.getElementById('propertyFade').style.display = 'block';
     lightBoxVideo.pause();
   }
   
-  function foodLightbox_close() {
-    var lightBoxVideo = document.getElementById("foodShowreel");
-    document.getElementById('foodLight').style.display = 'none';
-    document.getElementById('foodFade').style.display = 'none';
+  function propertyLightbox_close() {
+    var lightBoxVideo = document.getElementById("propertyShowreel");
+    document.getElementById('propertyLight').style.display = 'none';
+    document.getElementById('propertyFade').style.display = 'none';
     lightBoxVideo.pause();
   }
