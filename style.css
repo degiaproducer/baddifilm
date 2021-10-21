@@ -139,15 +139,11 @@ video{
 #light {
   display: none;
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top:200px;
+  left:300px;
   max-width: 20px;
-  margin-left: 0px;
-  margin-top: 0px;
-  border: 0px solid black;
   background:transparent;
   z-index: 1002;
-  overflow: visible;
 }
 
 /*box close button style*/
@@ -171,7 +167,7 @@ video{
 }
 
 .boxclose:before {
-  content: "x";
+  background-image: url('baddifilm_files/');
 }
 
 #fade:hover ~ #boxclose {
