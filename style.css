@@ -503,11 +503,3 @@ textarea:focus {
   font-size:19px;
   
 }
-
-@-webkit-keyframes aboutUs {
-  100% { left: 0; }
-}
-
-@keyframes aboutUs {
-  100% { left: 0; }
-}
