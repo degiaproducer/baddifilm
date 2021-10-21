@@ -430,7 +430,18 @@ button{
   padding-top:50px;
 }
 
-input:not([type]), input[type="text"], input[type="number"]{
+input:not([type]), input[type="text"], input[type="tel"]{
+  width: 70%;
+  line-height:5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid whitesmoke;
+  border-radius: 2px;
+  color: white;
+}
+
+input:not([type]), input[type="text"], input[type="tel"]{
   width: 70%;
   line-height:5px;
   padding: 12px 20px;
