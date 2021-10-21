@@ -9,14 +9,14 @@ window.document.onkeydown = function(e) {
   
   function lightbox_open() {
     var lightBoxVideo = document.getElementById("generalShowreel");
-    document.getElementById('light').style.display = 'block';
+    document.getElementById('generalLight').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
     lightBoxVideo.pause();
   }
   
   function lightbox_close() {
     var lightBoxVideo = document.getElementById("generalShowreel");
-    document.getElementById('light').style.display = 'none';
+    document.getElementById('generalLight').style.display = 'none';
     document.getElementById('fade').style.display = 'none';
     lightBoxVideo.pause();
   }

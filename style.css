@@ -90,12 +90,6 @@ img {
   padding:10px;
 }
 
-video{
-  float:none;
-  margin:0px;
-  width:max-content;
-}
-
 .general {
   position: relative;
 }
@@ -122,6 +116,9 @@ video{
 
 .motion {
   position: relative;
+  float:none;
+  margin:0px;
+  width:max-content;
 }
 
 .motionButton {
@@ -143,6 +140,7 @@ video{
   left:25%;
   right:5%;
 }
+
 /*here the lightbox closes*/
 #fade {
   display: none;
@@ -160,7 +158,17 @@ video{
 
 /* box close button position*/
 
-#light {
+#generalLight {
+  display: none;
+  position: absolute;
+  top:200px;
+  left:300px;
+  max-width: 20px;
+  background:transparent;
+  z-index: 1002;
+}
+
+#motionLight {
   display: none;
   position: absolute;
   top:200px;
@@ -172,7 +180,6 @@ video{
 
 /*box close button style*/
 #boxclose {
-  float: right;
   cursor: pointer;
   color: #fff;
   border: 1px solid #AEAEAE;

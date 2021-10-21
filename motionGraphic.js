@@ -9,15 +9,14 @@ window.document.onkeydown = function(e) {
   
   function lightbox_open() {
     var lightBoxVideo = document.getElementById("motionGraphic");
-    window.scrollTo(0, 1400); 
-    document.getElementById('light').style.display = 'block';
+    document.getElementById('motionLight').style.display = 'block';
     document.getElementById('fade').style.display = 'block';
     lightBoxVideo.pause();
   }
   
   function lightbox_close() {
     var lightBoxVideo = document.getElementById("motionGraphic");
-    document.getElementById('light').style.display = 'none';
+    document.getElementById('motionLight').style.display = 'none';
     document.getElementById('fade').style.display = 'none';
     lightBoxVideo.pause();
   }
