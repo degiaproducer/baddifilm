@@ -119,6 +119,30 @@ video{
   left:25%;
   right:5%;
 }
+
+.motion {
+  position: relative;
+}
+
+.motionButton {
+  background-image:url(baddifilm_files/mg.png);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  position:absolute;
+  top:5%;
+  left:25%;
+  right:5%;
+}
+
+.motionButton:hover {
+  background-image:url(baddifilm_files/mg\ hover.png);
+  background-size: 100%;
+  background-repeat:no-repeat;
+  position:absolute;
+  top:5%;
+  left:25%;
+  right:5%;
+}
 /*here the lightbox closes*/
 #fade {
   display: none;
