@@ -90,8 +90,17 @@ img {
   padding:10px;
 }
 
+video{
+  float:none;
+  margin:0px;
+  width:max-content;
+}
+
 .general {
   position: relative;
+  float:none;
+  margin:0px;
+  width:max-content;
 }
 
 .generalButton {
@@ -119,7 +128,6 @@ img {
   float:none;
   margin:0px;
   width:max-content;
-  height:auto;
 }
 
 .motionButton {
@@ -134,34 +142,6 @@ img {
 
 .motionButton:hover {
   background-image:url(baddifilm_files/mg\ hover.png);
-  background-size: 100%;
-  background-repeat:no-repeat;
-  position:absolute;
-  top:5%;
-  left:25%;
-  right:5%;
-}
-
-.food {
-  position: relative;
-  float:none;
-  margin:0px;
-  width:max-content;
-  height:auto;
-}
-
-.foodButton {
-  background-image:url(baddifilm_files/food.png);
-  background-size: 100%;
-  background-repeat:no-repeat;
-  position:absolute;
-  top:5%;
-  left:25%;
-  right:5%;
-}
-
-.foodButton:hover {
-  background-image:url(baddifilm_files/foodhover.png);
   background-size: 100%;
   background-repeat:no-repeat;
   position:absolute;
@@ -207,6 +187,7 @@ img {
   z-index: 1002;
 }
 
+
 #foodLight {
   display: none;
   position: absolute;
@@ -219,6 +200,7 @@ img {
 
 /*box close button style*/
 #boxclose {
+  float: right;
   cursor: pointer;
   color: #fff;
   border: 1px solid #AEAEAE;
