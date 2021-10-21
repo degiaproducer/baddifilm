@@ -336,6 +336,7 @@ video{
 .description{
   text-align: left;
   font-size: 35px;
+  width:67%;
  
 }
 
@@ -439,17 +440,36 @@ input:not([type]), input[type="text"], input[type="tel"]{
   border: 1px solid whitesmoke;
   border-radius: 2px;
   color: white;
+  font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,sans-serif;
+  font-size:19px;
 }
 
-input:not([type]), input[type="text"], input[type="tel"]{
+input[type="text"]:focus{
   width: 70%;
   line-height:5px;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 1px solid whitesmoke;
+  border: 1px solid #9FE2BF;
   border-radius: 2px;
   color: white;
+  outline:none;
+  font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,sans-serif;
+  font-size:19px;
+} 
+
+input[type="tel"]:focus{
+  width: 70%;
+  line-height:5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #9FE2BF;
+  border-radius: 2px;
+  color: white;
+  outline:none;
+  font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
+  font-size:19px;
 }
 
 textarea {
@@ -463,4 +483,24 @@ textarea {
   border-radius: 2px;
   color: white;
   background-color: transparent;
+  font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
+  font-size:19px;
 }
+
+textarea:focus {
+  width: 70%;
+  height:200px;
+  line-height:5px;
+  padding: 20px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0.5px solid #9FE2BF;
+  border-radius: 0.5px;
+  color: white;
+  background-color: transparent;
+  outline:none;
+  font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
+  font-size:19px;
+  
+}
+
