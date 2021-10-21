@@ -203,6 +203,7 @@ video{
   left:25%;
   right:5%;
 }
+
 /*here the lightbox closes*/
 #generalFade {
   display: none;
@@ -332,13 +333,26 @@ video{
 
 
 /*other stylesheet starts below*/
+.description{
+  text-align: left;
+  font-size: 35px;
+ 
+}
+
 p {
+  font-family:cormorantgaramond-semibold,cormorantgaramond,cormorant garamond,serif ;
   margin: auto;
   width: 50%;
   padding: 5px;
   color: white;
+  font-weight:900;
+  font-size: 35px;
   }
 
+.description{
+  text-align: left;
+  font-size:19px;
+}
 li {
   color: white;
   }
@@ -414,4 +428,15 @@ button{
 .footer {
   margin:0px;
   padding-top:50px;
+}
+
+input:not([type]), input[type="text"], input[type="number"]{
+  width: 70%;
+  line-height:5px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid whitesmoke;
+  border-radius: 2px;
+  color: white;
 }
