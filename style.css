@@ -28,7 +28,7 @@ img {
 
 .row:after {
   content: "";
-  margin:0px;
+  margin:0;
   display: table;
   clear: both;
 }
@@ -360,7 +360,7 @@ li {
 
 img {
   display: block;
-  width: 400px;
+  width: 70%;
   margin: 0 auto;
   margin-top: 40px;
   align: center;
@@ -385,7 +385,7 @@ form {
   padding: 10px;
   font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
   font-weight: 900;
-  font-size: 15px;
+  font-size: 15vw;
   color: white;
 }
 
@@ -484,7 +484,7 @@ textarea {
   color: white;
   background-color: transparent;
   font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
-  font-size:19px;
+  font-size:19;
 }
 
 textarea:focus {
@@ -500,6 +500,6 @@ textarea:focus {
   background-color: transparent;
   outline:none;
   font-family:cormorantgaramond,cormorantgaramond,cormorant garamond,serif;
-  font-size:19px;
+  font-size:19vw;
   
 }
