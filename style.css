@@ -504,3 +504,10 @@ textarea:focus {
   
 }
 
+@-webkit-keyframes aboutUs {
+  100% { left: 0; }
+}
+
+@keyframes aboutUs {
+  100% { left: 0; }
+}
