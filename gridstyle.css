@@ -1,37 +1,62 @@
-.openContainer {
-    display:grid;
-    height:50vh;
-    grid-template-columns: 5fr;
-    grid-template-rows: 1.5fr;
-
-}
-
-.navBar {
-    display:grid;
-    height:20vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-
-}
-
-.showreel{
-    display:grid;
+.container{
+    display: grid;
     height:100vh;
-    grid-template-columns: 5fr;
-    grid-template-rows: 20fr 20fr 20fr 20fr;
-
+    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-rows: 5fr 5fr 5fr 5fr 5fr 5fr 5fr 5fr;
 }
 
-.information {
-    display:grid;
-    height:40vh;
-    grid-template-columns: 5fr 5fr;
-    grid-template-rows: 5fr;
+#banner{
+    background: #89CFF0;
+    grid-area: "banner";
 }
 
-footer{
-    display:grid;
-    height:20vh;
-    grid-template-columns: 5fr;
-    grid-template-rows: 5fr;
+
+#projects{
+    background: #7DF9FF;
+    grid-area: "projects";
+
+#about{
+    background: #CCCCFF;
+    grid-area: "about";
+}
+
+#contact{ 
+    background:  #008080;
+    grid-area: "contact;"
+}
+
+
+#generalVideo {
+    background: #40E0D0;
+    grid-area: "generalVideo";
+}
+
+#motionVideo {
+    background: #0096FF;
+    grid-area: "motionVideo";
+}
+
+#foodVideo {
+    background: #6F8FAF;
+    grid-area: foodVideo;
+}
+
+#propertyVideo{
+    background:#e1b871;
+    grid-area: "propertyVideo";
+}
+
+#aboutUs{
+    background: #71d7e1;
+    grid-template: "aboutUs";
+}
+
+#contactUs {
+    background: #b2fff3;
+    grid-area: "contactUs";
+}
+
+#spacer{
+    background:#f3b2ff;
+    grid-area: "spacer";
 }
