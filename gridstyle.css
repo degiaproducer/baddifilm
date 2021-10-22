@@ -1,8 +1,8 @@
 .forcont{
     display: grid;
-    height:400vh;
+    height:500vh;
     grid-template-columns: 5fr 5fr 5fr;
-    grid-template-rows: 200fr 50fr 200fr 200fr 200fr 200fr 200fr 50fr;
+    grid-template-rows: 300fr 100fr 300fr 300fr 300fr 300fr 200fr 50fr;
     grid-template-areas: 
     "banner banner banner"
     "projects about contact"
@@ -12,7 +12,7 @@
     "propertyVideo propertyVideo propertyVideo"
     "aboutUs . contactUs"
     "spacer spacer spacer";
-    grid-gap: 0.5rem;
+    grid-gap: 4rem;
 }
 
 #banner{
@@ -73,7 +73,7 @@
 @media only screen and (max-width:550px){
     .forcont{
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr;
+        grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 1fr 1fr 0.5fr;
         grid-template-areas:
         "banner"
         "projects"
