@@ -1,0 +1,37 @@
+.openContainer {
+    display:grid;
+    height:50vh;
+    grid-template-columns: 5fr;
+    grid-template-rows: 1.5fr;
+
+}
+
+.navBar {
+    display:grid;
+    height:20vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.showreel{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 5fr;
+    grid-template-rows: 20fr 20fr 20fr 20fr;
+
+}
+
+.information {
+    display:grid;
+    height:40vh;
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 5fr;
+}
+
+footer{
+    display:grid;
+    height:20vh;
+    grid-template-columns: 5fr;
+    grid-template-rows: 5fr;
+}
