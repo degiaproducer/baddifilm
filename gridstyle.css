@@ -57,9 +57,9 @@ html {
 
 
 #generalVideo {
-    background: #ffb2da;
     grid-area: generalVideo;
 }
+  
 
 #motionVideo {
     background: #ffc8b2;
@@ -137,6 +137,6 @@ html {
         background-size: 70%;
     }
     banner{
-        
+
     }
 }
