@@ -106,8 +106,9 @@ body {
 
 @media only screen and (max-width:550px){
     .forcont{
+        height:500vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 1fr 1fr 0.5fr;
+        grid-template-rows: 2fr 0.5fr 0.5r 0.5fr 2fr 2fr 2fr 2fr 1fr 1fr 0.5fr;
         grid-template-areas:
         "banner"
         "project"
