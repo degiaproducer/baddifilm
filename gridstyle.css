@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: black;
+  }  
+
 .forcont{
     display: grid;
     height:500vh;
@@ -12,7 +20,7 @@
     "propertyVideo propertyVideo propertyVideo"
     "aboutUs . contactUs"
     "spacer spacer spacer";
-    grid-gap: 4rem;
+    grid-gap: 0.5rem;
 }
 
 #banner{
@@ -22,19 +30,29 @@
 
 
 #projects{
-    background: #ffbe5d;
     grid-area: projects;
+    background-image:url(baddifilm_files/projects.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  
 }
 
 
 #about{
     grid-area:about;
-    background: rgb(250, 214, 255);
+    background-image:url(baddifilm_files/aboutus1.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
 }
 
 #contact {
     grid-area: contact;
-    background: rgb(235, 255, 226);
+    background-image:url(baddifilm_files/contactus.webp);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
 }
 
 
@@ -77,7 +95,7 @@
     .forcont{
         height:400vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.4fr 0.4fr 0.4fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
         grid-gap: 0.5rem;
         grid-template-areas:
         "banner"
@@ -91,5 +109,31 @@
         "aboutUs"
         "contactUs"
         "spacer";
+    }
+}
+
+@media (hover: hover){
+    #projects:hover {
+        cursor:pointer;
+        background:url(baddifilm_files/projects.gif);
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+
+    #about:hover{
+        grid-area:about;
+        cursor:pointer;
+        background:url(baddifilm_files/aboutus.gif);
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+    }
+    #contact:hover {
+        cursor:pointer;
+        background:url(baddifilm_files/contactus.gif);
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
     }
 }
