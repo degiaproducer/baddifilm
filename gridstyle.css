@@ -13,7 +13,7 @@ body {
     grid-template-rows: 300fr 100fr 300fr 300fr 300fr 300fr 200fr 50fr;
     grid-template-areas: 
     "banner banner banner"
-    "projects about contact"
+    "project about contact"
     "generalVideo generalVideo generalVideo"
     "motionVideo motionVideo motionVideo"
     "foodVideo foodVideo foodVideo"
@@ -28,22 +28,45 @@ body {
     grid-area: banner;
 }
 
-#projects{
-    grid-area: projects;
-    width:100%;
-    height:100%;
+#project{
+    grid-area: project;
     background-image:url(baddifilm_files/projects.png);
     background-repeat: no-repeat;
 }
 
+#project:hover {
+    cursor:pointer;
+    background:url(baddifilm_files/projects.gif);
+    background-repeat: no-repeat;
+}
+
 #about{
-    background: #ffb2e4;
     grid-area:about;
+    background-image:url(baddifilm_files/aboutus1.png);
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+}
+
+#about:hover{
+    cursor:pointer;
+    background:url(baddifilm_files/aboutus.gif);
+    background-repeat:no-repeat;
+    
 }
 
 #contact {
-    background: #b2daff;
     grid-area: contact;
+    background-image:url(baddifilm_files/contactus.webp);
+    background-repeat: no-repeat;
+    width:100%;
+    height:100%;
+}
+
+#contact:hover {
+    cursor:pointer;
+    background:url(baddifilm_files/contactus.gif);
+    background-repeat:no-repeat;
 }
 
 #generalVideo {
@@ -87,7 +110,7 @@ body {
         grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr 2fr 2fr 2fr 2fr 1fr 1fr 0.5fr;
         grid-template-areas:
         "banner"
-        "projects"
+        "project"
         "about"
         "contact"
         "generalVideo"
