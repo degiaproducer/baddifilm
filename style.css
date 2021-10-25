@@ -81,7 +81,7 @@ img {
   background:url(baddifilm_files/contactus.gif);
   background-repeat:no-repeat;
 }
-}
+
 
 .banner {
   float:none;
@@ -337,6 +337,7 @@ video{
   text-align: left;
   font-size: 35px;
   width:67%;
+  
  
 }
 
