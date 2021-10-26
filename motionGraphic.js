@@ -9,6 +9,7 @@ window.document.onkeydown = function(e) {
   
   function motionLightbox_open() {
     var lightBoxVideo = document.getElementById("motionGraphic");
+    window.scrollTo(0,150);
     document.getElementById('motionLight').style.display = 'block';
     document.getElementById('motionFade').style.display = 'block';
     lightBoxVideo.pause();

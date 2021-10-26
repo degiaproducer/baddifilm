@@ -71,13 +71,8 @@ video {
     grid-area: generalVideo;
     /*background: rgb(224, 255, 210);*/
     align-items:center;
+    position:relative
 }
-
-/*
-.generalButton,
-.generalShowreel {
-  align-self: center;
-}*/
 
 .generalButton{
     background-image:url(baddifilm_files/gss.png);
@@ -90,27 +85,14 @@ video {
     top:20vh;
     left:-20vw;*/
 }
-.generalButton{
-    background-image:url(baddifilm_files/gss.png);
-    background-position:center center;
-    background-repeat: no-repeat;
-    background-size: 70%;
-    width:100%;
-    height:100%;
-    position: relative;
-    z-index: 1;
-}
 
-.generalShowreel{
+#generalShowreel{
     width: 100%; 
     height: 100%; 
     position: relative;
-    top: -120vh;
-    left: 0vw;
     z-index: -1;
 }
 
-/*here the lightbox closes*/
 #generalFade {
     display: none;
     position: fixed;
@@ -125,17 +107,18 @@ video {
     filter: alpha(opacity=80);
   }
   
-  /* box close button position*/
   
-  #generalLight {
+#generalLight {
     display: none;
     position: absolute;
-    padding: 15vw;   
-    top:10%;
+    padding: 10rem;   
+    top:0;
     align-items: center center;
     justify-content: center center;
     z-index: 1002;
-  }
+    cursor: pointer;
+}
+
 /*
 .backdrop {
     width: 60%;
@@ -166,10 +149,59 @@ video {
 }
 */
 
-#motionVideo {
-    background: #ffc8b2;
+.motionVideo {
+    /*background: #ffc8b2;*/
     grid-area: motionVideo;
+
 }
+
+.motionButton{
+    background-image:url(baddifilm_files/mg.png);
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    width:100%;
+    height:100%;
+    /*position: relative;
+    top:20vh;
+    left:-20vw;*/
+}
+
+
+#motionShowreel{
+    width: 100%; 
+    height: 100%; 
+    position: relative;
+    grid-column: 1/3;
+    grid-row: 4;
+    z-index: -1;
+}
+
+#motionFade {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top:0%;
+    left:0%;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=80);
+  }
+  
+  
+  #motionLight {
+    display: none;
+    position: absolute;
+    padding: 10rem;   
+    top:0;
+    align-items: center center;
+    justify-content: center center;
+    z-index: 1002;
+    cursor: pointer;
+  }
 
 #foodVideo {
     background: #ffefb2;
@@ -201,8 +233,8 @@ video {
 @media only screen and (max-width:550px){
     .forcont{
         height:400vh;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0.1fr 0.1fr 0.1fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-columns: 100fr;
+        grid-template-rows: 10fr 10fr 10fr 10fr 100fr 100fr 100fr 100fr 100fr 100fr 5fr;
         grid-gap: 0.5rem;
         grid-template-areas:
         "banner"
@@ -216,6 +248,17 @@ video {
         "aboutUs"
         "contactUs"
         "spacer";
+    }
+    .generalButton{
+        background-image:url(baddifilm_files/gss.png);
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        width:100%;
+        height:100%;
+        position: absolute;
+        top:50%;
+        left:50%;
     }
 }
 
@@ -244,9 +287,21 @@ video {
         background-size: 70%;
     }
     
-    .generalButton:hover {
-        cursor: pointer;
-        background-image:url(baddifilm_files/gsh.png);
+    .generalButton:hover{
+        background-image:url(baddifilm_files/gss.png);
+        background-position:center center;
+        background-repeat: no-repeat;
+        background-size: 70%;
+        width:100%;
+        height:100%;
+        /*position: relative;
+        top:20vh;
+        left:-20vw;*/
+    }
+    
+    .motionButton:hover {
+        cursor:pointer;
+        background-image:url(baddifilm_files/mg\ hover.png);
         background-position:center center;
         background-repeat: no-repeat;
         background-size: 70%;
@@ -257,6 +312,5 @@ video {
     }
     
     banner{
-
     }
 }

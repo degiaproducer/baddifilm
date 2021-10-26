@@ -9,6 +9,7 @@ window.document.onkeydown = function(e) {
   
   function foodLightbox_open() {
     var lightBoxVideo = document.getElementById("foodShowreel");
+    window.scrollTo(0,150);
     document.getElementById('foodLight').style.display = 'block';
     document.getElementById('foodFade').style.display = 'block';
     lightBoxVideo.pause();

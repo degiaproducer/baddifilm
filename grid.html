@@ -34,12 +34,13 @@
         
           <div id="generalFade" onClick="generalLightbox_close();">
           </div>
+    
            <!--<div class="generalShowreel">
                <video id="GS" autoplay="autoplay" controls>
                 <source src="baddifilm_files/generalShowreel.mp4" type="video/mp4">
                </video>
            </div>-->
-            <div class="generalShowreel">
+            <div id="generalShowreel">
                 <video playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip-path: inset(5% 0 5% 0);width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/generalShowreel.mp4" width="100%" height="50%"></video>
             </div>
             <!-- <div class="backdrop">Backdrop
@@ -54,8 +55,28 @@
         </div>
 
         <!--motionVideo-->
-        <div id="motionVideo">Motion Graphic</div>
-        <div id="foodVideo">Food Showreel</div>
+        <div class="motionVideo">
+        <div class='motionButton' onclick="motionLightbox_open();"></div>
+           <div id="motionLight">
+            <video id="motionShowreel" width='1280' height='720' controls>
+              <source src="baddifilm_files/motionGraphic.mp4" type="video/mp4">
+                  <!--Browser does not support <video> tag -->
+            </video>
+          </div>
+        
+          <div id="motionFade" onClick="motionLightbox_close();">
+          </div>
+          
+          <div id="motionShowreel">
+            <video playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip-path: inset(5% 0 5% 0);width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/motionGraphic.mp4" width="100%" height="50%"></video>
+        </div>
+        </div>
+
+        <div="foodVideo">
+            
+        </div>
+
+
         <div id="propertyVideo">Property Showreel</div>
         <div id='aboutUs'>About Us</div>
         <div id='contactUs'>Contact Us</div>
