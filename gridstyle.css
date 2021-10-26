@@ -130,7 +130,7 @@ video {
   #generalLight {
     display: none;
     position: absolute;
-    padding-left: 15vw;   
+    padding: 15vw;   
     top:10%;
     align-items: center center;
     justify-content: center center;
