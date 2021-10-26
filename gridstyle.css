@@ -34,7 +34,7 @@ video {
 }
 
 #banner{
-    background:#b2fff3;
+    /*background:#b2fff3;*/
     grid-area: banner;
 }
 
@@ -69,8 +69,7 @@ video {
 .generalVideo {
     grid-area: generalVideo;
     /*background: rgb(224, 255, 210);*/
-    align-items:center center;
-    justify-content: center center;
+    align-items:center;
 }
 
 /*
@@ -129,10 +128,9 @@ video {
   
 #generalLight {
     display: grid;
-    position: absolute;
-    padding: 5vw;   
-    align-items: center;
-    justify-self: center center;
+    position: relative;
+    padding: 5vw; 
+    align-items: center;  
     background:transparent;
     z-index: 1002;
 }
