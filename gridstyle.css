@@ -289,6 +289,7 @@ video {
     }
     
     .generalButton:hover{
+        cursor: pointer;
         background-image:url(baddifilm_files/gsh.png);
         background-position:center center;
         background-repeat: no-repeat;
