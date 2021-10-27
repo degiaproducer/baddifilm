@@ -25,14 +25,14 @@
         <!--generalVideo-->
         <div class="generalVideo">
            <div class='generalButton' onclick="generalLightbox_open();"></div>
-           <div id="generalLight">
+           <div id="generalLight" onclick="generalLightbox_close()">
             <video id="generalShowreel" width='1280' height='720' controls>
               <source src="baddifilm_files/generalShowreel.mp4" type="video/mp4">
                   <!--Browser does not support <video> tag -->
             </video>
           </div>
         
-          <div id="generalFade" onClick="generalLightbox_close();">
+          <div id="generalFade" onclick="generalLightbox_close();">
           </div>
     
            <!--<div class="generalShowreel">
@@ -57,14 +57,14 @@
         <!--motionVideo-->
         <div class="motionVideo">
         <div class='motionButton' onclick="motionLightbox_open();"></div>
-           <div id="motionLight">
+        <div id="motionLight" onclick="motionLightbox_close()">
             <video id="motionShowreel" width='1280' height='720' controls>
               <source src="baddifilm_files/motionGraphic.mp4" type="video/mp4">
                   <!--Browser does not support <video> tag -->
             </video>
           </div>
         
-          <div id="motionFade" onClick="motionLightbox_close();">
+          <div id="motionFade" onclick="motionLightbox_close();">
           </div>
           
           <div id="motionShowreel">
