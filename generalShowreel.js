@@ -9,7 +9,7 @@ window.document.onkeydown = function(e) {
   
   function generalLightbox_open() {
     var lightBoxVideo = document.getElementById("generalShowreel");
-    window.scrollTo(0,0);
+    window.scrollTo(0,150);
     document.getElementById('generalLight').style.display = 'block';
     document.getElementById('generalFade').style.display = 'block';
     lightBoxVideo.pause();

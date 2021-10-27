@@ -112,8 +112,8 @@ video {
 #generalLight {
     display: none;
     position: absolute;
-    padding-left: 15vw;   
-    top:10%;
+    padding: 10rem;   
+    top:0;
     align-items: center center;
     justify-content: center center;
     z-index: 1002;
