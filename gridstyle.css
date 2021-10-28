@@ -74,13 +74,6 @@ video {
     height:auto;
 }
 
-.generalBanner{
-    width: 100%; 
-    height: auto; 
-    position: relative;
-    z-index: -1;
-}
-
 .generalButton{
     background-image:url(baddifilm_files/gss.png);
     background-position: center center;
@@ -147,25 +140,25 @@ video {
 }
 */
 
-.motionVideo {
-    /*background: #ffc8b2;*/
+#motionVideo {
     grid-area: motionVideo;
+    position:relative;
+    background: rgb(96, 210, 255);
+    width:100%;
+    height:auto;
 
 }
 
 .motionButton{
     background-image:url(baddifilm_files/mg.png);
-    background-position:center center;
+    background-position: center center;
     background-repeat: no-repeat;
-    background-size: 70%;
-    width:100%;
-    height:100%;
-    /*position: relative;
-    top:20vh;
-    left:-20vw;*/
+    background-size: 150%;
+    width: 50vmin;
+    height: 50vmin;
 }
 
-
+/*
 #motionShowreel{
     width: 100%; 
     height: 100%; 
@@ -173,7 +166,7 @@ video {
     grid-column: 1/3;
     grid-row: 4;
     z-index: -1;
-}
+}*/
 
 #motionFade {
     display: none;
@@ -199,6 +192,7 @@ video {
     justify-content: center center;
     z-index: 1002;
     cursor: pointer;
+    width:100%;
   }
 
 #foodVideo {
@@ -256,6 +250,44 @@ video {
         width: 50vmin;
         height: 50vmin;
     }
+
+    #generalFade {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        top:0%;
+        left:0%;
+        z-index: 1001;
+        -moz-opacity: 0.8;
+        opacity: .80;
+        filter: alpha(opacity=80);
+      }
+    
+    #generalLight {
+        display: none;
+        position: absolute;
+        padding: 5vmin;   
+        align-items: center center;
+        justify-content: center center;
+        z-index: 1002;
+        cursor: pointer;
+        width:100%;
+    }
+
+    #motionLight {
+        display: none;
+        position: absolute;
+        padding: 5vmin;   
+        align-items: center center;
+        justify-content: center center;
+        z-index: 1002;
+        cursor: pointer;
+        width:100%;
+    }
+    
+
     
 }
 
@@ -295,15 +327,13 @@ video {
     }
 
     .motionButton:hover {
-        cursor:pointer;
         background-image:url(baddifilm_files/mg\ hover.png);
-        background-position:center center;
+        background-position: center center;
         background-repeat: no-repeat;
-        background-size: 70%;
-        width:100%;
-        height:100%;
-        position: relative;
-        z-index: 1;
+        background-size: 150%;
+        width: 50vmin;
+        height: 50vmin;
+        cursor: pointer;
     }
     
     banner{
