@@ -21,7 +21,7 @@ video {
     display: grid;
     height:900vh;
     grid-template-columns: 5fr 5fr 5fr;
-    grid-template-rows: 100fr 20fr 100fr 100fr 100fr 100fr 200fr 50fr;
+    grid-template-rows: 100fr 20fr 70fr 70fr 70fr 70fr 100fr 50fr;
     grid-template-areas: 
     "banner banner banner"
     "projects about contact"
@@ -66,12 +66,20 @@ video {
     background-size: 70%;
 }
 
-#container {
+#general {
     position:relative;
     grid-area: generalVideo;
-    background: rgb(255, 175, 54);
+    background: rgb(255, 169, 112);
     width:100%;
     height:auto;
+}
+
+
+
+.button{
+    background: rgb(139, 222, 255);
+    width:20vw;
+    height:20vh;
 }
 
 /*.box {
@@ -89,19 +97,11 @@ video {
 .center{left:50%;margin-left:-10px;}
 .right{right:0;} */
 
-
-.generalVideo {
-    grid-area: generalVideo;
-    /*background: rgb(224, 255, 210);*/
-}
-
 .generalButton{
     background-image:url(baddifilm_files/gss.png);
     background-position:center center;
     background-repeat: no-repeat;
     background-size: 70%;
-    align-items: center;
-    justify-content: center;
     width:100%;
     height:100%;
   
@@ -111,10 +111,10 @@ video {
     width: 100%; 
     height: 100%; 
     position: relative;
-    grid-column: 1/4;
-    grid-row: 3;
     z-index: -1;
 }
+
+
 /*this part does not affect current issues*/
 #generalFade {
     display: none;
@@ -129,8 +129,6 @@ video {
     opacity: .80;
     filter: alpha(opacity=80);
   }
-  
-  
 #generalLight {
     display: none;
     position: absolute;
@@ -255,9 +253,9 @@ video {
 
 @media only screen and (max-width:550px){
     .forcont{
-        height:400vh;
+        height:200vh;
         grid-template-columns: 100fr;
-        grid-template-rows: 10fr 10fr 10fr 10fr 100fr 100fr 100fr 100fr 100fr 100fr 5fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
         grid-gap: 0.5rem;
         grid-template-areas:
         "banner"
