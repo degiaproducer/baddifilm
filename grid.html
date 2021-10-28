@@ -28,14 +28,26 @@
 
         </div>-->
 
-        <div id="general">
-        <div class="generalShowreel">
+    <div id="general">
+
+        <div class="generaBanner">
             <video playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip-path: inset(5% 0 5% 0);width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/generalShowreel.mp4" width="100%" height="50%"></video>
         </div>
+<!--the above part's resolved-->        
         <div class="position-absolute top-50 start-50 translate-middle">
-            <div class="button"></div>
+            <div class="generalButton" onclick="generalLightbox_open();"></div>
         </div>
+<!--the above part may not be-->
+
+        <div class="generalLight"> 
+            <video id="generalShowreel" width='1280' height='720' controls>
+              <source src="baddifilm_files/generalShowreel.mp4" type="video/mp4">
+                <!--Browser does not support <video> tag -->
+            </video>
         </div>
+
+        <div id="generalFade" onclick="generalLightbox_close();"></div>
+    </div>
 <!--     
         <div class="generalVideo">
             <div class='generalButton' onclick="generalLightbox_open();"></div>
@@ -43,7 +55,7 @@
             <div id="generalLight" onclick="generalLightbox_close()"> 
             <video id="generalShowreel" width='1280' height='720' controls>
               <source src="baddifilm_files/generalShowreel.mp4" type="video/mp4">
-                s
+                
             </video>
           </div>
           </div>

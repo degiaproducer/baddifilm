@@ -76,7 +76,7 @@ video {
 
 
 
-.button{
+.generalButton{
     background-image:url(baddifilm_files/gss.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -85,33 +85,9 @@ video {
     height: 50vmin;
 }
 
-/*.box {
-    background: rgb(144, 233, 255);
-    position:absolute;
-    width:20vw;
-    height:20vh;
-}
-
-.top{top:0}
-.middle{top:50%;margin-top:-10px;}
-.bottom{bottom:0}
-
-.left{left:0;}
-.center{left:50%;margin-left:-10px;}
-.right{right:0;} */
-
-.generalButton{
-    background-image:url(baddifilm_files/gss.png);
-    background-position:center center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height:auto;
-  
-}
-
-#generalShowreel{
+.generalBanner{
     width: 100%; 
-    height: 100%; 
+    height: auto; 
     position: relative;
     z-index: -1;
 }
@@ -131,7 +107,8 @@ video {
     opacity: .80;
     filter: alpha(opacity=80);
   }
-#generalLight {
+
+.generalLight {
     display: none;
     position: absolute;
     padding: 10rem;   
@@ -273,6 +250,15 @@ video {
         "spacer";
     }
     
+    .generalButton{
+        background-image:url(baddifilm_files/gss.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        width: 50vmin;
+        height: 50vmin;
+    }
+    
 }
 
 @media (hover: hover){
@@ -299,20 +285,17 @@ video {
         background-repeat: no-repeat;
         background-size: 70%;
     }
-    
-    .generalButton:hover{
-        cursor: pointer;
+
+    .generalButton:hover {
         background-image:url(baddifilm_files/gsh.png);
-        background-position:center center;
+        background-position: center center;
         background-repeat: no-repeat;
-        background-size: 70%;
-        width:100%;
-        height:100%;
-        /*position: relative;
-        top:20vh;
-        left:-20vw;*/
+        background-size: 200%;
+        width: 50vmin;
+        height: 50vmin;
+        cursor: pointer;
     }
-    
+
     .motionButton:hover {
         cursor:pointer;
         background-image:url(baddifilm_files/mg\ hover.png);
@@ -327,4 +310,6 @@ video {
     
     banner{
     }
+
+    
 }
