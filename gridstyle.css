@@ -19,9 +19,9 @@ video {
 
 .forcont{
     display: grid;
-    height:900vh;
+    height:500vh;
     grid-template-columns: 5fr 5fr 5fr;
-    grid-template-rows: 100fr 20fr 70fr 70fr 70fr 70fr 100fr 50fr;
+    grid-template-rows: 3fr 2fr 7fr 7fr 7fr 7fr 10fr 5fr;
     grid-template-areas: 
     "banner banner banner"
     "projects about contact"
@@ -74,7 +74,12 @@ video {
     height:auto;
 }
 
-
+.generalBanner{
+    width: 100%; 
+    height: auto; 
+    position: relative;
+    z-index: -1;
+}
 
 .generalButton{
     background-image:url(baddifilm_files/gss.png);
@@ -84,14 +89,6 @@ video {
     width: 50vmin;
     height: 50vmin;
 }
-
-.generalBanner{
-    width: 100%; 
-    height: auto; 
-    position: relative;
-    z-index: -1;
-}
-
 
 /*this part does not affect current issues*/
 #generalFade {
@@ -108,7 +105,7 @@ video {
     filter: alpha(opacity=80);
   }
 
-.generalLight {
+#generalLight {
     display: none;
     position: absolute;
     padding: 10rem;   
@@ -117,6 +114,7 @@ video {
     justify-content: center center;
     z-index: 1002;
     cursor: pointer;
+    width:100%;
 }
 
 /*
@@ -192,7 +190,7 @@ video {
   }
   
   
-  #motionLight {
+#motionLight {
     display: none;
     position: absolute;
     padding: 10rem;   
