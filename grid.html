@@ -65,12 +65,39 @@
 
 
     
-        <div="foodVideo">
-            
+    <div id="foodVideo">
+        <video playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip-path: inset(5% 0 5% 0);width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/foodVideo.mp4" width="100%" height="50%"></video>
+
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="foodButton" onclick="foodLightbox_open();"></div>
         </div>
 
+        <div id="foodLight" onclick="foodLightbox_close();">
+            <video controls type="video/mp4">
+                <source src="baddifilm_files/foodVideo.mp4">
+            </video>
+        </div>
+        <div id="foodFade" onclick="foodLightbox_close();">
+        </div>
+    </div>
 
-        <div id="propertyVideo">Property Showreel</div>
+
+        <div id="propertyVideo">
+            <video playsinline="" preload="auto" muted="muted" loop="" autoplay="autoplay" tabindex="-1" style="clip-path: inset(5% 0 5% 0);width: 100%; height: 100%; object-fit: cover; object-position: center center; opacity: 1;" src="baddifilm_files/property.mp4" width="100%" height="50%"></video>
+
+        <div class="position-absolute top-50 start-50 translate-middle">
+            <div class="propertyButton" onclick="propertyLightbox_open();"></div>
+        </div>
+
+        <div id="propertyLight" onclick="propertyLightbox_close();">
+            <video controls type="video/mp4">
+                <source src="baddifilm_files/property.mp4">
+            </video>
+        </div>
+        <div id="propertyFade" onclick="propertyLightbox_close();">
+        </div>
+
+        </div>
         <div id='aboutUs'>About Us</div>
         <div id='contactUs'>Contact Us</div>
         <footer id="spacer">Footer</footer>
@@ -80,7 +107,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src='generalShowreel.js'></script>
     <script src='motionGraphic.js'></script>
-    <script src='foodVideo.js'></script>
+    <script src='food.js'></script>
     <script src='propertyVideo.js'></script>
     <script src="scroll.js"></script>
 </body>

@@ -8,15 +8,14 @@ window.document.onkeydown = function(e) {
   }
   
   function foodLightbox_open() {
-    var lightBoxVideo = document.getElementById("foodShowreel");
-    window.scrollTo(0,150);
+    var lightBoxVideo = document.getElementById("foodVideo");
     document.getElementById('foodLight').style.display = 'block';
     document.getElementById('foodFade').style.display = 'block';
     lightBoxVideo.pause();
   }
   
   function foodLightbox_close() {
-    var lightBoxVideo = document.getElementById("foodShowreel");
+    var lightBoxVideo = document.getElementById("foodVideo");
     document.getElementById('foodLight').style.display = 'none';
     document.getElementById('foodFade').style.display = 'none';
     lightBoxVideo.pause();
