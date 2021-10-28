@@ -66,12 +66,33 @@ video {
     background-size: 70%;
 }
 
+#container {
+    position:relative;
+    grid-area: generalVideo;
+    background: rgb(255, 175, 54);
+    width:100%;
+    height:auto;
+}
+
+/*.box {
+    background: rgb(144, 233, 255);
+    position:absolute;
+    width:20vw;
+    height:20vh;
+}
+
+.top{top:0}
+.middle{top:50%;margin-top:-10px;}
+.bottom{bottom:0}
+
+.left{left:0;}
+.center{left:50%;margin-left:-10px;}
+.right{right:0;} */
+
 
 .generalVideo {
     grid-area: generalVideo;
     /*background: rgb(224, 255, 210);*/
-    align-items:center;
-    position:relative
 }
 
 .generalButton{
@@ -79,21 +100,22 @@ video {
     background-position:center center;
     background-repeat: no-repeat;
     background-size: 70%;
+    align-items: center;
+    justify-content: center;
     width:100%;
     height:100%;
-    /*position: relative;
-    top:20vh;
-    left:-20vw;*/
+  
 }
 
 #generalShowreel{
     width: 100%; 
     height: 100%; 
     position: relative;
-    top:-120vh;
+    grid-column: 1/4;
+    grid-row: 3;
     z-index: -1;
 }
-
+/*this part does not affect current issues*/
 #generalFade {
     display: none;
     position: fixed;
