@@ -7,7 +7,7 @@ window.document.onkeydown = function(e) {
   }
 }
 
-function motionLightbox_open() {
+function generalLightbox_open() {
   var lightBoxVideo = document.getElementById("generalShowreel");
 
   document.getElementById('generalLight').style.display = 'block';
@@ -15,9 +15,9 @@ function motionLightbox_open() {
   lightBoxVideo.pause();
 }
 
-function motionLightbox_close() {
+function generalLightbox_close() {
   var lightBoxVideo = document.getElementById("generalShowreel");
   document.getElementById('generalLight').style.display = 'none';
-  document.getElementById('geberalShowreel').style.display = 'none';
+  document.getElementById('generalFade').style.display = 'none';
   lightBoxVideo.pause();
 }
