@@ -118,18 +118,22 @@
 
             </p>
         </div>
-        <div id='contactUs'>
-        <img src=baddifilm_files/contactus.png style="position:relative; align-items: center;"><br><br><br>
 
-        <form action="https://getform.io/f/82e3e871-2b9b-484f-8bd1-d0ec6cd07e00" method="POST">
+        <div class='contactUs'>
+     
+            <img id="contactTitle" src=baddifilm_files/contactus.png>
+      
+        <form id="contactForm" action="https://getform.io/f/82e3e871-2b9b-484f-8bd1-d0ec6cd07e00" method="POST">
     
         <input type="text" id="fname" name="name" placeholder="NAME" required>
         <input type="text" id="email" name="email" placeholder="EMAIL">
         <input type='tel' id="phone" name="phone" placeholder="PHONE NUMBER" required>
         <textarea name="message" id="message" placeholder="YOUR MESSAGE" required rows="100" cols="100"></textarea><br>
-        <button class="button" id="submit">
-        </button>
         </form>
+        
+        <button class="submitButton" id="submit">
+        </button>
+    
         </div>
         <footer id="spacer">Footer</footer>
         

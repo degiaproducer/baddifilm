@@ -22,14 +22,14 @@ video {
 p {
     color: aliceblue;
     text-align: left;
-    font-size: 2em;
+    font-size: 0.5em;
     font-weight: lighter;
 }
 
 .forcont{
     display: grid;
     height:650vh;
-    grid-template-columns: 5fr 5fr 5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 3fr 7fr 7fr 7fr 7fr 7fr 10fr 1fr;
     grid-template-areas: 
     "banner banner banner"
@@ -40,7 +40,6 @@ p {
     "propertyVideo propertyVideo propertyVideo"
     "aboutUs . contactUs"
     "spacer spacer spacer";
-    grid-gap: 0.5rem;
 }
 
 #banner{
@@ -258,34 +257,54 @@ p {
 #aboutUs{
     grid-area: aboutUs;
     position:relative;
+    /*background: rgb(72, 187, 172);*/
 }
 
 img {
     position:absolute;
     padding:5rem;
-    width:50%;
+    max-width:100%;
 }
   
 .description {
     padding:5rem;
-    font-size: 1.7em;
+    font-size: 1em;
     line-height: 200%;
 }
 
-#contactUs{
+.contactUs{
+    max-width: 100%;
+    display:grid;
     grid-area: contactUs;
+    position: relative;
+    /*background: rgb(255, 145, 82);*/
+    overflow-x:auto;
+    min-height: 0;
+    min-width: 0; 
 }
+
+#contactTitle{
+    position: absolute;
+    top:0;
+}
+
+#contactForm{
+    position:absolute;
+    top:30%;
+    left:10%;
+    right:5%;
+}
+
 
 input:not([type]), input[type="text"], input[type="tel"]{
     width: 90%;
     line-height:150%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
-    box-sizing: border-box;
     border: 0.1vmin solid whitesmoke;
     border-radius: 0.2vmin;
     color: white;
-    font-size:2em;
+    font-size:1em;
     color: white;
     font-family:'Cormorant Garamond', serif;
     font-weight: 500;
@@ -296,10 +315,9 @@ input:not([type]), input[type="text"], input[type="tel"]{
     line-height:5%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
-    box-sizing: border-box;
     border-radius: 0.2vmin;
     color: white;
-    font-size:2em;
+    font-size:1em;
     border: 0.1vmin solid #9FE2BF; 
     color: white;
     font-family:'Cormorant Garamond', serif;
@@ -311,10 +329,9 @@ input:not([type]), input[type="text"], input[type="tel"]{
     line-height:5%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
-    box-sizing: border-box;
     border-radius: 0.2vmin;
     color: white;
-    font-size:2em;
+    font-size:1em;
     border: 0.1vmin solid #9FE2BF; 
     color: white;
     font-family:'Cormorant Garamond', serif;
@@ -326,11 +343,10 @@ input:not([type]), input[type="text"], input[type="tel"]{
     line-height:5%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
-    box-sizing: border-box;
     border: 0.1vmin solid whitesmoke;
     border-radius: 0.2vmin;
     color: white;
-    font-size:2em;
+    font-size:1em;
     background: transparent;
     color: white;
     font-family:'Cormorant Garamond', serif;
@@ -342,10 +358,9 @@ input:not([type]), input[type="text"], input[type="tel"]{
     line-height:5%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
-    box-sizing: border-box;
     border-radius: 0.2vmin;
     color: white;
-    font-size:2em;
+    font-size:1em;
     border: 0.1vmin solid #9FE2BF; 
     color: white;
     font-family:'Cormorant Garamond', serif;
@@ -371,20 +386,22 @@ input:not([type]), input[type="text"], input[type="tel"]{
     background:transparent;
   }
   
-  button{
+.submitButton {
     background-image:url(baddifilm_files/submit\ button.png);
+    background-repeat: no-repeat;
     background-color:transparent;
     background-size: 100%;
     background-position:center;
-    width:290px;
-    height:50px;
-    align:center;
+    width:15vw;
+    height:10vh;
     border:none;
     cursor:pointer;
-    margin-top:20px;
-    object-fit:fill;
+    margin-top:auto;
+    position:absolute;
+    top: 85%;
+    left:25%;
+    right:25%;
   }
-
 
 #spacer{
     grid-area: spacer;
@@ -392,9 +409,9 @@ input:not([type]), input[type="text"], input[type="tel"]{
 
 @media only screen and (max-width:550px){
     .forcont{
-        height:250vh;
+        height:350vh;
         grid-template-columns: 100fr;
-        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr 1fr 1fr 2fr 0.5fr;
         grid-gap: 0.5rem;
         grid-template-areas:
         "banner"
@@ -476,6 +493,30 @@ input:not([type]), input[type="text"], input[type="tel"]{
         cursor: pointer;
         width:100%;
     }
+
+    
+    #contactTitle{
+    position: absolute;
+    top:0;
+    }
+    
+    .submitButton {
+        background-image:url(baddifilm_files/submit\ button.png);
+        background-repeat: no-repeat;
+        background-color:transparent;
+        background-size: 100%;
+        background-position:center;
+        width:45vw;
+        height:40vh;
+        border:none;
+        cursor:pointer;
+        margin-top:auto;
+        position:absolute;
+        top: 50%;
+        left:25%;
+        right:25%;
+      }
+}
     
 
     
@@ -545,6 +586,23 @@ input:not([type]), input[type="text"], input[type="tel"]{
         height: 75vmin;
         cursor: pointer;
     }
+
+    .submitButton:hover {
+        background-image:url(baddifilm_files/submit.gif);
+        background-repeat: no-repeat;
+        background-color:transparent;
+        background-size: 100%;
+        background-position:center;
+        width:15vw;
+        height:10vh;
+        border:none;
+        cursor:pointer;
+        margin-top:auto;
+        position:absolute;
+        top: 85%;
+        left:25%;
+        right:25%;
+      }
     
     banner{
     }
