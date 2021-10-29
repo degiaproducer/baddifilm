@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+
 * {
     box-sizing: border-box;
   }
@@ -10,6 +11,7 @@ html{
   
 body {
     background-color: black;
+    font-size:100%;
   }  
 
 video {
@@ -17,11 +19,18 @@ video {
     height: auto !important;
 }
 
+p {
+    color: aliceblue;
+    text-align: left;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
 .forcont{
     display: grid;
-    height:500vh;
+    height:650vh;
     grid-template-columns: 5fr 5fr 5fr;
-    grid-template-rows: 3fr 2fr 7fr 7fr 7fr 7fr 10fr 5fr;
+    grid-template-rows: 3fr 7fr 7fr 7fr 7fr 7fr 10fr 1fr;
     grid-template-areas: 
     "banner banner banner"
     "projects about contact"
@@ -29,7 +38,7 @@ video {
     "motionVideo motionVideo motionVideo"
     "foodVideo foodVideo foodVideo"
     "propertyVideo propertyVideo propertyVideo"
-    "aboutUs aboutUs contactUs"
+    "aboutUs . contactUs"
     "spacer spacer spacer";
     grid-gap: 0.5rem;
 }
@@ -69,7 +78,7 @@ video {
 #general {
     position:relative;
     grid-area: generalVideo;
-    background: rgb(255, 169, 112);
+
     width:100%;
     height:auto;
 }
@@ -247,25 +256,141 @@ video {
 }
 
 #aboutUs{
-    background: #b2faff;
     grid-area: aboutUs;
+    position:relative;
+}
+
+img {
+    position:absolute;
+    padding:5rem;
+    width:50%;
+}
+  
+.description {
+    padding:5rem;
 }
 
 #contactUs{
-    background: #cab2ff;
     grid-area: contactUs;
 }
 
+input:not([type]), input[type="text"], input[type="tel"]{
+    width: 90%;
+    line-height:5%;
+    padding: 2.5vmin 2vmin;
+    margin: 0.2vmin;
+    box-sizing: border-box;
+    border: 0.1vmin solid whitesmoke;
+    border-radius: 0.2vmin;
+    color: white;
+    font-size:2em;
+    color: white;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+  
+  input[type="text"]:focus{
+    width: 90%;
+    line-height:5%;
+    padding: 2.5vmin 2vmin;
+    margin: 0.2vmin;
+    box-sizing: border-box;
+    border-radius: 0.2vmin;
+    color: white;
+    font-size:2em;
+    border: 0.1vmin solid #9FE2BF; 
+    color: white;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+  } 
+  
+  input[type="tel"]:focus{
+    width: 90%;
+    line-height:5%;
+    padding: 2.5vmin 2vmin;
+    margin: 0.2vmin;
+    box-sizing: border-box;
+    border-radius: 0.2vmin;
+    color: white;
+    font-size:2em;
+    border: 0.1vmin solid #9FE2BF; 
+    color: white;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+  
+  textarea {
+    width: 90%;
+    line-height:5%;
+    padding: 2.5vmin 2vmin;
+    margin: 0.2vmin;
+    box-sizing: border-box;
+    border: 0.1vmin solid whitesmoke;
+    border-radius: 0.2vmin;
+    color: white;
+    font-size:2em;
+    background: transparent;
+    color: white;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+  
+  textarea:focus {
+    width: 90%;
+    line-height:5%;
+    padding: 2.5vmin 2vmin;
+    margin: 0.2vmin;
+    box-sizing: border-box;
+    border-radius: 0.2vmin;
+    color: white;
+    font-size:2em;
+    border: 0.1vmin solid #9FE2BF; 
+    color: white;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+    
+  }
+  
+::placeholder{
+    margin: auto;
+    width: 50%;
+    padding: 2vmin;
+    font-size: 75%;
+    color: white;
+    font-family:'Cormorant Garamond', serif;
+    font-weight: 500;
+  }
+  
+  input { 
+    margin: auto;
+    width: 100%;
+    padding: 2.5vmin 2vmin;
+    outline-color:  #ffffff; 
+    background:transparent;
+  }
+  
+  button{
+    background-image:url(baddifilm_files/submit\ button.png);
+    background-color:transparent;
+    background-size: 100%;
+    background-position:center;
+    width:290px;
+    height:50px;
+    align:center;
+    border:none;
+    cursor:pointer;
+    margin-top:20px;
+    object-fit:fill;
+  }
+
+
 #spacer{
-    background: #b2d3ff;
     grid-area: spacer;
-    grid-column: 1/2;
-    grid-row: 8/10;
 }
 
 @media only screen and (max-width:550px){
     .forcont{
-        height:200vh;
+        height:250vh;
         grid-template-columns: 100fr;
         grid-template-rows: 1fr 0.2fr 0.2fr 0.2fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
         grid-gap: 0.5rem;
