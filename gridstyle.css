@@ -268,6 +268,8 @@ img {
   
 .description {
     padding:5rem;
+    font-size: 1.7em;
+    line-height: 200%;
 }
 
 #contactUs{
@@ -276,7 +278,7 @@ img {
 
 input:not([type]), input[type="text"], input[type="tel"]{
     width: 90%;
-    line-height:5%;
+    line-height:150%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
     box-sizing: border-box;
@@ -539,8 +541,8 @@ input:not([type]), input[type="text"], input[type="tel"]{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 100%;
-    width: 75vmin;
-    height: 75vmin;
+        width: 75vmin;
+        height: 75vmin;
         cursor: pointer;
     }
     
