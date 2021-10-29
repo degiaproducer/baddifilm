@@ -218,14 +218,13 @@ p {
     height:auto;
 }
 
-
 .propertyButton{
     background-image:url(baddifilm_files/pss.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 70vmin;
-    height: 70vmin;
+    width: 75vmin;
+    height: 75vmin;
 }
 
 #propertyFade {
@@ -254,6 +253,7 @@ p {
     cursor: pointer;
     width:100%;
 }
+
 
 #aboutUs{
     grid-area: aboutUs;
@@ -539,8 +539,8 @@ input:not([type]), input[type="text"], input[type="tel"]{
         background-position: center center;
         background-repeat: no-repeat;
         background-size: 100%;
-        width: 70vmin;
-        height: 70vmin;
+    width: 75vmin;
+    height: 75vmin;
         cursor: pointer;
     }
     
