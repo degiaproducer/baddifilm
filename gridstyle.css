@@ -30,7 +30,7 @@ p {
     display: grid;
     height:670vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 3fr 7fr 7fr 7fr 7fr 7fr 10fr 1fr;
+    grid-template-rows: 3fr 2fr 7fr 7fr 7fr 7fr 10fr 2fr;
     grid-template-areas: 
     "banner banner banner banner banner banner"
     "projects projects about about contact contact"
@@ -39,7 +39,7 @@ p {
     "foodVideo foodVideo foodVideo foodVideo foodVideo foodVideo"
     "propertyVideo propertyVideo propertyVideo propertyVideo propertyVideo propertyVideo"
     "aboutUs aboutUs aboutUs contactUs contactUs contactUs"
-    "spacer spacer spacer spacer spacer spacer";
+    "aboutUs aboutUs aboutUs contactUs contactUs contactUs";
 }
 
 #banner{
@@ -272,7 +272,8 @@ p {
 }
 
 .description {
-    padding:2rem;
+    padding:10rem;
+    padding-top: 5rem;
     font-size: 1em;
     line-height: 1.7;
     letter-spacing:normal;
@@ -297,23 +298,22 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 50%;
-    border:solid aqua;
     width:100%;
     height:100%;
+    margin-bottom: 5%;
 }
 
 .form {
     display:block;
     border:solid aqua;
-    width:100%;
-    height:100%;
     text-align: center;
 }
 
 form {
     display:inline-block;
     width:100%;
-    height:40%;
+    height:100%;
+    margin-top:5%;
 }
 
 input:not([type]), input[type="text"], input[type="tel"]{
@@ -362,7 +362,7 @@ input:not([type]), input[type="text"], input[type="tel"]{
   
   textarea {
     width: 90%;
-    height:10vmin;
+    height: 40%;
     line-height:5%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
@@ -378,6 +378,7 @@ input:not([type]), input[type="text"], input[type="tel"]{
   
   textarea:focus {
     width: 90%;
+    height: 40%;
     line-height:5%;
     padding: 2.5vmin 2vmin;
     margin: 0.2vmin;
@@ -423,11 +424,6 @@ input:not([type]), input[type="text"], input[type="tel"]{
     margin-top:auto;
   }
 
-#spacer{
-    grid-area: spacer;
-    border: solid pink;
-}
-
 @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
     .forcont{
         display: grid;
@@ -435,16 +431,16 @@ input:not([type]), input[type="text"], input[type="tel"]{
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 3fr 0.5fr 7fr 7fr 7fr 7fr 1fr 1fr;
         grid-template-areas: 
-        "banner banner banner"
-        "projects about contact"
-        "generalVideo generalVideo generalVideo"
-        "motionVideo motionVideo motionVideo"
-        "foodVideo foodVideo foodVideo"
-        "propertyVideo propertyVideo propertyVideo"
-        "aboutUs  contactUs"
-        "spacer spacer spacer";
-    
-  }
+        "banner banner banner banner banner banner"
+    "projects projects about about contact contact"
+    "generalVideo generalVideo generalVideo generalVideo generalVideo generalVideo"
+    "motionVideo motionVideo motionVideo motionVideo motionVideo motionVideo"
+    "foodVideo foodVideo foodVideo foodVideo foodVideo foodVideo"
+    "propertyVideo propertyVideo propertyVideo propertyVideo propertyVideo propertyVideo"
+    "aboutUs aboutUs aboutUs contactUs contactUs contactUs"
+    "aboutUs aboutUs aboutUs contactUs contactUs contactUs";
+    }
+}
 
 @media only screen and (max-width:550px){
     .forcont{
@@ -554,7 +550,6 @@ input:not([type]), input[type="text"], input[type="tel"]{
             height:100%;
             cursor:pointer;
           }
-    }
     
     .generalButton{
         background-image:url(baddifilm_files/gss.png);
@@ -718,17 +713,14 @@ input:not([type]), input[type="text"], input[type="tel"]{
         background-image:url(baddifilm_files/submit.gif);
         background-repeat: no-repeat;
         background-color:transparent;
-        background-size: 100%;
+        background-size: 30%;
         background-position:center;
-        width:15vw;
-        height:10vh;
+        /*border:solid aqua;*/
         border:none;
+        width:100%;
+        height:100%;
         cursor:pointer;
         margin-top:auto;
-        position:absolute;
-        top: 85%;
-        left:25%;
-        right:25%;
       }
     
     banner{
