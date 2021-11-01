@@ -114,9 +114,14 @@ p {
 #general {
     position:relative;
     grid-area: generalVideo;
-
     width:100%;
     height:auto;
+    background: salmon;
+}
+
+.generalS{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .generalButton{
@@ -165,6 +170,11 @@ p {
 
 }
 
+.motionS{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 .motionButton{
     background-image:url(baddifilm_files/mg.png);
     background-position: center center;
@@ -209,6 +219,10 @@ p {
     height:auto;
 }
 
+.foodS{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 
 .foodButton{
     background-image:url(baddifilm_files/fss.png);
@@ -254,6 +268,10 @@ p {
     height:auto;
 }
 
+.propertyS {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
 .propertyButton{
     background-image:url(baddifilm_files/pss.png);
     background-position: center center;
@@ -276,7 +294,6 @@ p {
     opacity: .80;
     filter: alpha(opacity=80);
   }
-  
   
 #propertyLight {
     display: none;
@@ -483,12 +500,12 @@ input:not([type]), input[type="text"], input[type="tel"]{
 
 @media only screen and (max-width:550px){
     .forcont{
-        height:350vh;
+        height:300vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.7fr 0.05fr 0.05fr 0.05fr 0.6fr 0.6fr 0.6fr 0.6fr 0.5fr 1.5fr 0.5fr;
+        grid-template-rows: 0.4fr 0.1fr 0.1fr 0.1fr 0.4fr 0.4fr 0.4fr 0.4fr 0.9fr 0.7fr;
         grid-template-areas:
         "banner"
-        "projects"
+        "project"
         "about"
         "contact"
         "generalVideo"
@@ -496,123 +513,21 @@ input:not([type]), input[type="text"], input[type="tel"]{
         "foodVideo"
         "propertyVideo"
         "aboutUs"
-        "contactUs"
-        "spacer";
-    }
-    
-        .generalButton{
-            background-image:url(baddifilm_files/gss.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: 200%;
-            width: 50vmin;
-            height: 50vmin;
-        }
-    
-        #generalFade {
-            display: none;
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            top:0%;
-            left:0%;
-            z-index: 1001;
-            -moz-opacity: 0.8;
-            opacity: .80;
-            filter: alpha(opacity=80);
-          }
-        
-        #generalLight {
-            display: none;
-            position: absolute;
-            padding: 5vmin;   
-            align-items: center center;
-            justify-content: center center;
-            z-index: 1002;
-            cursor: pointer;
-            width:100%;
-        }
-    
-        #motionLight {
-            display: none;
-            position: absolute;
-            padding: 5vmin;   
-            align-items: center center;
-            justify-content: center center;
-            z-index: 1002;
-            cursor: pointer;
-            width:100%;
-        }
-    
-        #foodLight {
-            display: none;
-            position: absolute;
-            padding: 5vmin;   
-            align-items: center center;
-            justify-content: center center;
-            z-index: 1002;
-            cursor: pointer;
-            width:100%;
-        }
-    
-        #propertyLight {
-            display: none;
-            position: absolute;
-            padding: 5vmin;   
-            align-items: center center;
-            justify-content: center center;
-            z-index: 1002;
-            cursor: pointer;
-            width:100%;
-        }
-    
-        .contact {
-            background-image: url(baddifilm_files/contactus.png);
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-size: 70%;
-            border:solid aqua;
-            width:100%;
-            height:100%;
-        }
-    
-        
-        .submitButton {
-            background-image:url(baddifilm_files/submit\ button.png);
-            background-repeat: no-repeat;
-            background-color:transparent;
-            background-size: 50%;
-            background-position:center;
-            border:solid aqua;
-            width:100%;
-            height:100%;
-            cursor:pointer;
-          }
-    
-    .generalButton{
-        background-image:url(baddifilm_files/gss.png);
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: 200%;
-        width: 50vmin;
-        height: 50vmin;
+        "contactUs";
+    }    
+
+    .project {
+        background-size: 50%;
     }
 
-    #generalFade {
-        display: none;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        top:0%;
-        left:0%;
-        z-index: 1001;
-        -moz-opacity: 0.8;
-        opacity: .80;
-        filter: alpha(opacity=80);
-      }
-    
+    .about {
+        background-size: 50%;
+    }
+
+    .contact{
+        background-size: 50%;
+    }
+
     #generalLight {
         display: none;
         position: absolute;
@@ -656,18 +571,75 @@ input:not([type]), input[type="text"], input[type="tel"]{
         cursor: pointer;
         width:100%;
     }
-
-    .contact {
-        background-image: url(baddifilm_files/contactus.png);
-        background-position: center center;
+    
+    .aboutTitle {
+        background-image: url(baddifilm_files/ABOUTUS.png);
         background-repeat: no-repeat;
-        background-size: 70%;
-        border:solid aqua;
+        background-position: center center;
+        background-size: 40%;
+        border: solid aqua;
         width:100%;
-        height:100%;
+        height:10%;
+        margin-bottom: 5%;
+    }
+    
+    .description {
+        padding:0.5rem;
+        padding-top:0;
+        font-size: 1em;
+        line-height: 1.7;
+        letter-spacing:normal;
     }
 
+    .form {
+        display:inline-block;
+        border:solid aqua;
+        text-align: center;
+        position:static;
+        align-self: center;
+        height:90%;
+        width:100%;
+    }
     
+    form {
+        display:inline-block;
+        width:100%;
+        height:70%;
+    }
+
+    textarea {
+        width: 90%;
+        height: 90%;
+        line-height:5%;
+        padding: 2.5vmin 2vmin;
+        margin: 0.2vmin;
+        border: 0.1vmin solid whitesmoke;
+        border-radius: 0.2vmin;
+        color: white;
+        font-size:1em;
+        background: transparent;
+        color: white;
+        font-family:'Cormorant Garamond', serif;
+        font-weight: 500;
+      }
+      
+      textarea:focus {
+        width: 90%;
+        height: 90%;
+        line-height:5%;
+        padding: 2.5vmin 2vmin;
+        margin: 0.2vmin;
+        border-radius: 0.2vmin;
+        color: white;
+        font-size:1em;
+        border: 0.1vmin solid #9FE2BF; 
+        color: white;
+        font-family:'Cormorant Garamond', serif;
+        font-weight: 500;
+        
+      }
+     
+
     .submitButton {
         background-image:url(baddifilm_files/submit\ button.png);
         background-repeat: no-repeat;
