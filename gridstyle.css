@@ -684,7 +684,7 @@ input:not([type]), input[type="text"], input[type="tel"]{
     
 
 @media (hover: hover){
-  /*  #projects:hover {
+    .project:hover {
         cursor:pointer;
         background:url(baddifilm_files/projects.gif);
         background-position:center center;
@@ -692,7 +692,7 @@ input:not([type]), input[type="text"], input[type="tel"]{
         background-size: 70%;
     }
 
-    #about:hover{
+    .about:hover{
         grid-area:about;
         cursor:pointer;
         background:url(baddifilm_files/aboutus.gif);
@@ -700,13 +700,13 @@ input:not([type]), input[type="text"], input[type="tel"]{
         background-repeat: no-repeat;
         background-size: 70%;
     }
-    #contact:hover {
+    .contact:hover {
         cursor:pointer;
         background:url(baddifilm_files/contactus.gif);
         background-position:center center;
         background-repeat: no-repeat;
         background-size: 70%;
-    }*/
+    }
 
     .generalButton:hover {
         background-image:url(baddifilm_files/gsh.png);
