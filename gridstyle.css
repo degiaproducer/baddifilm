@@ -576,7 +576,7 @@ input:not([type]), input[type="text"], input[type="tel"]{
         background-repeat: no-repeat;
         background-position: center center;
         background-size: 40%;
-        border: solid aqua;
+        /*border: solid aqua;*/
         width:100%;
         height:10%;
         margin-bottom: 5%;
@@ -592,7 +592,7 @@ input:not([type]), input[type="text"], input[type="tel"]{
 
     .form {
         display:inline-block;
-        border:solid aqua;
+        /*border:solid aqua;*/
         text-align: center;
         position:static;
         align-self: center;
@@ -645,7 +645,7 @@ input:not([type]), input[type="text"], input[type="tel"]{
         background-color:transparent;
         background-size: 50%;
         background-position:center;
-        border:solid aqua;
+        /*border:solid aqua;*/
         width:100%;
         height:100%;
         cursor:pointer;
